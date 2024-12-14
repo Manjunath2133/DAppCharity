@@ -1,4 +1,4 @@
-require('@nomicfoundation/hardhat-toolbox')
+require('@nomicfoundation/hardhat-toolbox');
 
 module.exports = {
   defaultNetwork: 'localhost',
@@ -6,10 +6,11 @@ module.exports = {
     hardhat: {},
     localhost: {
       url: 'http://127.0.0.1:8545',
+      accounts: ['YOUR_PRIVATE_KEY'] // Replace with your Ethereum private key
     },
     bitfinity: {
       url: 'https://testnet.bitfinity.network',
-      accounts: [''],
+      accounts: ['YOUR_PRIVATE_KEY'],
       chainId: 355113,
     },
   },
@@ -25,4 +26,4 @@ module.exports = {
   mocha: {
     timeout: 40000,
   },
-}
+};
